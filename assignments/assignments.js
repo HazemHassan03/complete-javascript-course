@@ -125,6 +125,7 @@ if (language === "English" && population < 50 && !isIsland) {
 }
 */
 
+/*
 // Assignment 9 - Logical Operators
 const language = "arabic";
 switch (language) {
@@ -147,3 +148,10 @@ switch (language) {
   default:
     console.log("Great language too :D");
 }
+*/
+
+// Assignment 10 - The Conditional (Ternary) Operator
+const country = "Egypt";
+let population = 130;
+
+console.log(`${country}'s population is ${population > 33 ? "above" : "below"} average`);
