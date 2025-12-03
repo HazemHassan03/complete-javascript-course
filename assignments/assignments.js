@@ -78,6 +78,7 @@ const description = `${country} is in ${continent}, and its ${population} millio
 console.log(description);
 */
 
+/*
 // Assignment 6 - Taking Decisions: if / else Statements
 const country = "Egypt";
 const continent = "Africa";
@@ -90,3 +91,11 @@ if (population < 33) {
 } else {
   console.log(`${country}'s population is ${population - 33} million above average`);
 }
+*/
+
+// Assignment 7 - Type Conversion and Coercion
+console.log("9" - "5"); // -> 4
+console.log("19" - "13" + "17"); // -> "617"
+console.log("19" - "13" + 17); // -> 23
+console.log("123" < 57); // -> false
+console.log(5 + 6 + "4" + 9 - 4 - 2); // -> 1143
