@@ -102,8 +102,23 @@ console.log("123" < 57); // -> false
 console.log(5 + 6 + "4" + 9 - 4 - 2); // -> 1143
 */
 
+/*
 // Assignment 8 - Equality Operators: == vs. ===
 const numNeighbours = Number(prompt("How many neighbour countries does your contry have?"));
 if (numNeighbours === 1) console.log("Only 1 border!");
 else if (numNeighbours > 1) console.log("More than 1 border");
 else console.log("No borders");
+*/
+
+// Assignment 9 - Logical Operators
+const country = "Egypt";
+const continent = "Africa";
+let population = 130;
+const isIsland = false;
+const language = "Arabic";
+
+if (language === "English" && population < 50 && !isIsland) {
+  console.log(`You should live in ${country} :)`);
+} else {
+  console.log(`${country} does not meet your criteria :(`);
+}
