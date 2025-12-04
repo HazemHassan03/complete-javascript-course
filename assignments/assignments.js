@@ -287,6 +287,7 @@ if (!neighbours.includes("Germany")) {
 neighbours[neighbours.indexOf("KSA")] = "Kingdom of Saudi Arabia";
 */
 
+/*
 // Assignment 17 - Introduction to Objects
 const myCountry = {
   country: "Egypt",
@@ -295,3 +296,21 @@ const myCountry = {
   population: 119,
   neighbours: ["Greece", "KSA", "Sudan", "Libya"],
 };
+*/
+
+// Assignment 18 - Dot vs. Bracket Notation
+const myCountry = {
+  country: "Egypt",
+  capital: "Cairo",
+  language: "arabic",
+  population: 119,
+  neighbours: ["Greece", "KSA", "Sudan", "Libya"],
+};
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+
+myCountry.population += 2;
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+
+myCountry["population"] -= 2;
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
