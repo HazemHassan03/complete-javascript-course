@@ -237,6 +237,7 @@ console.log(percentageSpain3);
 console.log(percentageQatar3);
 */
 
+/*
 // Assignment 14 - Functions Calling Other Functions
 function percentageOfWorld1(population) {
   return (population / 7900) * 100;
@@ -254,3 +255,15 @@ const describeQatar = describePopulation("Qatar", 3);
 console.log(describeEgypt);
 console.log(describeSpain);
 console.log(describeQatar);
+*/
+
+// Assignment 14 - Introduction to Arrays
+const populations = [119, 47, 3, 57];
+console.log(populations.length === 4);
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+console.log(percentages);
