@@ -53,8 +53,8 @@ console.log(population > 6);
 
 console.log(population < 33);
 
-const description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
-console.log(description);
+const describtion = country + " is in " + continent + ", and its " + population + " million people speak " + languagecountry, population and capitalCity;
+console.log(describtion)country, population and capitalCity;
 */
 
 /*
@@ -74,8 +74,8 @@ console.log(population > 6);
 
 console.log(population < 33);
 
-const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
-console.log(description);
+const describtion = `${country} is in ${continent}, and its ${population} million people speak ${language}`country, population and capitalCity;
+console.log(describtion)country, population and capitalCity;
 */
 
 /*
@@ -150,8 +150,23 @@ switch (language) {
 }
 */
 
+/*
 // Assignment 10 - The Conditional (Ternary) Operator
 const country = "Egypt";
 let population = 130;
 
 console.log(`${country}'s population is ${population > 33 ? "above" : "below"} average`);
+*/
+
+// Assignment 11 - Functions
+function describeCountry(country, population, capitalCity) {
+  return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+}
+
+const describeEgypt = describeCountry("Egypt", 119, "Cairo");
+const describeSpain = describeCountry("Spain", 47, "Madrid");
+const describeQatar = describeCountry("Qatar", 3, "Doha");
+
+console.log(describeEgypt);
+console.log(describeSpain);
+console.log(describeQatar);
