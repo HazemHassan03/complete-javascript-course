@@ -270,6 +270,7 @@ const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(popu
 console.log(percentages);
 */
 
+/*
 // Assignment 16 - Basic Array Operations (Methods)
 const neighbours = ["Greece", "KSA", "Sudan", "Libya"];
 
@@ -284,3 +285,13 @@ if (!neighbours.includes("Germany")) {
 }
 
 neighbours[neighbours.indexOf("KSA")] = "Kingdom of Saudi Arabia";
+*/
+
+// Assignment 17 - Introduction to Objects
+const myCountry = {
+  country: "Egypt",
+  capital: "Cairo",
+  language: "Arabic",
+  population: 119,
+  neighbours: ["Greece", "KSA", "Sudan", "Libya"],
+};
