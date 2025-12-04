@@ -158,6 +158,7 @@ let population = 130;
 console.log(`${country}'s population is ${population > 33 ? "above" : "below"} average`);
 */
 
+/*
 // Assignment 11 - Functions
 function describeCountry(country, population, capitalCity) {
   return `${country} has ${population} million people and its capital city is ${capitalCity}`;
@@ -170,3 +171,29 @@ const describeQatar = describeCountry("Qatar", 3, "Doha");
 console.log(describeEgypt);
 console.log(describeSpain);
 console.log(describeQatar);
+*/
+
+// Assignment 12 - Functions
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+const percentageEgypt1 = percentageOfWorld1(119);
+const percentageSpain1 = percentageOfWorld1(47);
+const percentageQatar1 = percentageOfWorld1(3);
+
+console.log(percentageEgypt1);
+console.log(percentageSpain1);
+console.log(percentageQatar1);
+
+const percentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+};
+
+const percentageEgypt2 = percentageOfWorld2(119);
+const percentageSpain2 = percentageOfWorld2(47);
+const percentageQatar2 = percentageOfWorld2(3);
+
+console.log(percentageEgypt2);
+console.log(percentageSpain2);
+console.log(percentageQatar2);
