@@ -257,6 +257,7 @@ console.log(describeSpain);
 console.log(describeQatar);
 */
 
+/*
 // Assignment 15 - Introduction to Arrays
 const populations = [119, 47, 3, 57];
 console.log(populations.length === 4);
@@ -267,3 +268,19 @@ function percentageOfWorld1(population) {
 
 const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
 console.log(percentages);
+*/
+
+// Assignment 16 - Introduction to Arrays
+const neighbours = ["Greece", "KSA", "Sudan", "Libya"];
+
+neighbours.push("Utopia");
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) {
+  console.log("Probably not a central european country :D");
+}
+
+neighbours[neighbours.indexOf("KSA")] = "Kingdom of Saudi Arabia";
