@@ -257,7 +257,7 @@ console.log(describeSpain);
 console.log(describeQatar);
 */
 
-// Assignment 14 - Introduction to Arrays
+// Assignment 15 - Introduction to Arrays
 const populations = [119, 47, 3, 57];
 console.log(populations.length === 4);
 
