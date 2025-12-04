@@ -270,7 +270,7 @@ const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(popu
 console.log(percentages);
 */
 
-// Assignment 16 - Introduction to Arrays
+// Assignment 16 - Basic Array Operations (Methods)
 const neighbours = ["Greece", "KSA", "Sudan", "Libya"];
 
 neighbours.push("Utopia");
