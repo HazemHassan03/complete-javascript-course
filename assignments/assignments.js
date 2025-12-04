@@ -200,6 +200,7 @@ console.log(percentageSpain2);
 console.log(percentageQatar2);
 */
 
+// Assignment 13 - Arrow Functions
 function percentageOfWorld1(population) {
   return (population / 7900) * 100;
 }
