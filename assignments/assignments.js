@@ -200,6 +200,7 @@ console.log(percentageSpain2);
 console.log(percentageQatar2);
 */
 
+/*
 // Assignment 13 - Arrow Functions
 function percentageOfWorld1(population) {
   return (population / 7900) * 100;
@@ -234,3 +235,22 @@ const percentageQatar3 = percentageOfWorld2(3);
 console.log(percentageEgypt3);
 console.log(percentageSpain3);
 console.log(percentageQatar3);
+*/
+
+// Assignment 14 - Functions Calling Other Functions
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+function describePopulation(country, population) {
+  const percentage = percentageOfWorld1(population);
+  return `${country} has ${population} million people, which is about ${percentage} of the world`;
+}
+
+const describeEgypt = describePopulation("Egypt", 119);
+const describeSpain = describePopulation("Spain", 47);
+const describeQatar = describePopulation("Qatar", 3);
+
+console.log(describeEgypt);
+console.log(describeSpain);
+console.log(describeQatar);
