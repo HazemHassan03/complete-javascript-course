@@ -317,6 +317,7 @@ myCountry["population"] -= 2;
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
 */
 
+/*
 // Assignment 19 - Object Methods
 const myCountry = {
   country: "Egypt",
@@ -330,11 +331,23 @@ const myCountry = {
   // checkIsland: function () {
   //   this.isIsland = this.neighbours.length === 0;
   // },
+  // !=======================================================================
+  // !============================== IMPORTANT ==============================
+  // !=======================================================================
   checkIsland: function () {
     this.isIsland = !Boolean(this.neighbours.length);
   },
+  // !=======================================================================
+  // !============================== IMPORTANT ==============================
+  // !=======================================================================
 };
 
 myCountry.describe();
 myCountry.checkIsland();
 console.log(myCountry);
+*/
+
+// Assignment 20 - Iteration: The for Loop
+for (let rep = 1; rep <= 50; rep++) {
+  console.log(`Voter number ${rep} is currently voting`);
+}
