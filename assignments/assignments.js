@@ -347,7 +347,24 @@ myCountry.checkIsland();
 console.log(myCountry);
 */
 
+/*
 // Assignment 20 - Iteration: The for Loop
 for (let rep = 1; rep <= 50; rep++) {
   console.log(`Voter number ${rep} is currently voting`);
 }
+*/
+
+// Assignment 21 - Looping Arrays, Breaking and Continuing
+const populations = [119, 47, 3, 57];
+
+const percentages = [];
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+for (let i = 0; i < populations.length; i++) {
+  percentages.push(percentageOfWorld1(populations[i]));
+}
+
+console.log(percentages);
