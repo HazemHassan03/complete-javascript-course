@@ -298,6 +298,7 @@ const myCountry = {
 };
 */
 
+/*
 // Assignment 18 - Dot vs. Bracket Notation
 const myCountry = {
   country: "Egypt",
@@ -314,3 +315,26 @@ console.log(`${myCountry.country} has ${myCountry.population} million ${myCountr
 
 myCountry["population"] -= 2;
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+*/
+
+// Assignment 19 - Object Methods
+const myCountry = {
+  country: "Egypt",
+  capital: "Cairo",
+  language: "arabic",
+  population: 119,
+  neighbours: ["Greece", "KSA", "Sudan", "Libya"],
+  describe: function () {
+    console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`);
+  },
+  // checkIsland: function () {
+  //   this.isIsland = this.neighbours.length === 0;
+  // },
+  checkIsland: function () {
+    this.isIsland = !Boolean(this.neighbours.length);
+  },
+};
+
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry);
