@@ -354,6 +354,7 @@ for (let rep = 1; rep <= 50; rep++) {
 }
 */
 
+/*
 // Assignment 21 - Looping Arrays, Breaking and Continuing
 const populations = [119, 47, 3, 57];
 
@@ -368,3 +369,13 @@ for (let i = 0; i < populations.length; i++) {
 }
 
 console.log(percentages);
+*/
+
+// Assignment 22 - Looping Backwards and Loops in Loops
+const listOfNeighbours = [["Canada", "Mexico"], ["Spain"], ["Norway", "Sweden", "Russia"]];
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let j = 0; j < listOfNeighbours[i].length; j++) {
+    console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+  }
+}
