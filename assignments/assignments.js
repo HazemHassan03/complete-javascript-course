@@ -414,9 +414,8 @@ Use the problem-solving framework: Understand the problem and break it up into s
 
 TEST DATA 1: [17, 21, 23]
 TEST DATA 2: [12, 5, -5, 0, 4]
-*/
 
-/* Brainstorming
+Brainstorming
 1) Understanding The Problem
   1. What is the repeated value? Answer: "... [temp]°C in [day] days "
 
@@ -425,7 +424,6 @@ TEST DATA 2: [12, 5, -5, 0, 4]
   2. Loop on the array
   3. Add the iterating value to the empty string
   4. End up with "..."
-*/
 
 const temps1 = [17, 21, 23];
 const temps2 = [12, 5, -5, 0, 4];
@@ -439,3 +437,54 @@ function printForecast(temps) {
 }
 printForecast(temps1);
 printForecast(temps2);
+*/
+
+/* Coding Challenge #2 Section 5
+Let's say you're building a time tracking application for freelancers. At some point in building this app, you need a function that receives daily work hours for a certain week, and returns:
+1. Total hours worked
+2. Average daily hours
+3. The day with the most hours worked
+4. Number of days worked
+5. Whether the week was full-time (worked 35 hours or more)
+
+TEST DATA: [7.5, 8, 6.5, 0, 8.5, 4, 0]
+
+Brainstorming
+1) Breaking up into sub-problems
+  - Declare a variable called totalHours.
+  - Declare a variable called max.
+  - Declare a variable called workedDays.
+  - Make a loop to calculate the total of hours [1], the max value [3], and no zero days [4].
+  - Use this sum variable to calculate the average [2] and whether the week was full-time [5].
+*/
+
+const hours = [7.5, 8, 6.5, 0, 8.5, 4, 0];
+
+function calculations(arr) {
+  if (arr.length !== 7) return "Please enter 7 days";
+
+  let totalHours = 0;
+  let mostHours = arr[0];
+  let workedDays = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    totalHours += arr[i];
+    if (arr[i] > mostHours) mostHours = arr[i];
+    if (arr[i] !== 0) workedDays++;
+  }
+
+  const average = (totalHours / arr.length).toFixed(1);
+  const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  const maxDay = weekDays[arr.indexOf(mostHours)];
+  const fullTime = totalHours >= 35;
+
+  return {
+    totalHours: totalHours,
+    averageDailyHours: average,
+    theDayMostHoursWorked: maxDay,
+    daysWorked: workedDays,
+    fullTime: fullTime,
+  };
+}
+
+console.table(calculations(hours));
