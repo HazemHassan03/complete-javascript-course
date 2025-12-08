@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 // Assignment 1 - Values and Variables
 let country = "Egypt";
@@ -382,6 +384,7 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
 }
 */
 
+/*
 // Assignment 23 - The while Loop
 const populations = [119, 47, 3, 57];
 
@@ -398,3 +401,41 @@ while (i < populations.length) {
 }
 
 console.log(percentages);
+*/
+
+/* Coding Challenge #1 Section 5
+Given an array of forecasted maximum temperatures, the thermometer displays a string with these temperatures.
+
+Example: [17, 21, 23] will print "... 17°C in 1 days . . . 21°C in 2 days ... 23°C in 3 days ..."
+
+Create a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console.
+
+Use the problem-solving framework: Understand the problem and break it up into sub-problems!
+
+TEST DATA 1: [17, 21, 23]
+TEST DATA 2: [12, 5, -5, 0, 4]
+*/
+
+/* Brainstorming
+1) Understanding The Problem
+  1. What is the repeated value? Answer: "... [temp]°C in [day] days "
+
+2) Breaking up into sub-problems
+  1. Make an empty string
+  2. Loop on the array
+  3. Add the iterating value to the empty string
+  4. End up with "..."
+*/
+
+const temps1 = [17, 21, 23];
+const temps2 = [12, 5, -5, 0, 4];
+function printForecast(temps) {
+  let forecast = "";
+  for (let i = 0; i < temps.length; i++) {
+    forecast += `... ${temps[i]}°C in ${i + 1} days `;
+  }
+  forecast += "...";
+  console.log(forecast);
+}
+printForecast(temps1);
+printForecast(temps2);
