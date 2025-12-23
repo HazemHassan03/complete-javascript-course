@@ -676,6 +676,7 @@ const books = [
   },
 ];
 
+/*
 // Assignment 24 - Destructuring Arrays
 // 1
 const [firstBook, secondBook] = books;
@@ -693,3 +694,34 @@ const [[, rating], [, ratingsCount]] = ratings;
 // 4
 const ratingStars = [63405, 1808];
 const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
+*/
+
+// Assignment 25 - Destructuring Objects
+// 1
+const { title, author, ISBN } = books[0];
+
+// 2
+const { keywords: tags } = books[0];
+
+// 3
+const { language, programmingLanguage = "Unknown" } = books[6];
+
+// 4
+let bookTitle = "unknown";
+let bookAuthor = "unknown";
+({ title: bookTitle, author: bookAuthor } = books[0]);
+
+// 5
+const {
+  thirdParty: {
+    goodreads: { rating: bookRating },
+  },
+} = books[0];
+
+// 6
+function printBookInfo({ title, author, year = "year unknown" }) {
+  console.log(`${title} by ${author}, ${year}`);
+}
+
+printBookInfo({ title: "Algorithms", author: "Robert Sedgewick", year: "2011" });
+printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
