@@ -696,6 +696,7 @@ const ratingStars = [63405, 1808];
 const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
 */
 
+/*
 // Assignment 25 - Destructuring Objects
 // 1
 const { title, author, ISBN } = books[0];
@@ -725,3 +726,15 @@ function printBookInfo({ title, author, year = "year unknown" }) {
 
 printBookInfo({ title: "Algorithms", author: "Robert Sedgewick", year: "2011" });
 printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
+*/
+
+// Assignment 26 - The Spread Operator
+
+// 1
+const bookAuthors = [...books[0].author, books[1].author];
+
+//2
+function spellWord(word) {
+  console.log(...word);
+}
+spellWord("JavaScript");
