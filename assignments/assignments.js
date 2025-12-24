@@ -728,6 +728,7 @@ printBookInfo({ title: "Algorithms", author: "Robert Sedgewick", year: "2011" })
 printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
 */
 
+/*
 // Assignment 26 - The Spread Operator
 
 // 1
@@ -738,3 +739,17 @@ function spellWord(word) {
   console.log(...word);
 }
 spellWord("JavaScript");
+*/
+
+// Assignment 27 - Rest Pattern and Parameters
+// 1
+const [mainKeyword, ...rest] = books[0].keywords;
+
+// 2
+const { publisher: bookPublisher, ...restOfTheBook } = books[1];
+
+// 3
+function printBookAuthorsCount(title, ...authors) {
+  console.log(`The book "${title}" has ${authors.length} authors`);
+}
+printBookAuthorsCount("Algorithms", "Robert Sedgewick", "Kevin Wayne");
