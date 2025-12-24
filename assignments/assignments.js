@@ -741,6 +741,7 @@ function spellWord(word) {
 spellWord("JavaScript");
 */
 
+/*
 // Assignment 27 - Rest Pattern and Parameters
 // 1
 const [mainKeyword, ...rest] = books[0].keywords;
@@ -753,3 +754,17 @@ function printBookAuthorsCount(title, ...authors) {
   console.log(`The book "${title}" has ${authors.length} authors`);
 }
 printBookAuthorsCount("Algorithms", "Robert Sedgewick", "Kevin Wayne");
+*/
+
+// Assignment 28 - Short Circuiting (&& and ||)
+// 1
+function hasExamplesInJava(book) {
+  return book.programmingLanguage === "Java" || "no data available";
+}
+console.log(hasExamplesInJava(books[1]));
+
+// 2
+for (let i = 0; i < books.length; i++) {
+  console.log(books[i].onlineContent && `"${books[i].title}" provides online content`); // ! not this way
+  books[i].onlineContent && console.log(`"${books[i].title}" provides online content`); // but this way
+}
