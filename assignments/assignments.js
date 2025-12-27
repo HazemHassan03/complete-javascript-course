@@ -771,7 +771,14 @@ for (let i = 0; i < books.length; i++) {
 }
 */
 
+/*
 // Assignment 29 - The Nullish Coalescing Operator (??)
 for (let i = 0; i < books.length; i++) {
   books[i].onlineContent ?? console.log(`"${books[i].title}" provides no data about its online content`);
+}
+*/
+
+// Assignment 30 - Logical Assignments Operators
+for (let i = 0; i < books.length; i++) {
+  books[i].edition ||= 1;
 }
