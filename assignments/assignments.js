@@ -756,6 +756,7 @@ function printBookAuthorsCount(title, ...authors) {
 printBookAuthorsCount("Algorithms", "Robert Sedgewick", "Kevin Wayne");
 */
 
+/*
 // Assignment 28 - Short Circuiting (&& and ||)
 // 1
 function hasExamplesInJava(book) {
@@ -767,4 +768,10 @@ console.log(hasExamplesInJava(books[1]));
 for (let i = 0; i < books.length; i++) {
   console.log(books[i].onlineContent && `"${books[i].title}" provides online content`); // ! not this way
   books[i].onlineContent && console.log(`"${books[i].title}" provides online content`); // but this way
+}
+*/
+
+// Assignment 29 - The Nullish Coalescing Operator (??)
+for (let i = 0; i < books.length; i++) {
+  books[i].onlineContent ?? console.log(`"${books[i].title}" provides no data about its online content`);
 }
